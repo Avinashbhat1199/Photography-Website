@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Image Change</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        flex-direction: column;
+      }
+      .sub img {
+        width: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .sub1 {
+        text-align: center;
+        display: inline-block;
+        margin-top: 20px;
+        height: 20px;
+        width: 100px;
+      }
+      .custom-button {
+        font-family: "Courier New";
+        padding: 10px 25px;
+        font-size: 16px;
+        color: #fff;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 0; /* Ensures the border is rectangular */
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .custom-button:hover,
+      .custom-button:focus {
+        background-color: white;
+        color: #333; /* Text color for contrast */
+        outline: none; /* Removes default focus outline */
+      }
+      body {
+        /* Initial background image */
+        background-image: url("C:\Users\Avinash.Bhat\Desktop\website/images/image1.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        margin: 0;
+        transition: background-image 1s ease-in-out; /* Smooth transition */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sub">
+        <img src="dp/dp.png" alt="not found" />
+      </div>
+      <div class="sub1">
+        <button class="custom-button">ENTER</button>
+      </div>
+    </div>
+    <script>
+      // Array of image filenames stored in the "images" folder
+      const images = ["image1.jpg", "image2.jpg"];
+
+      // Function to change the background image
+      function changeBackgroundImage() {
+        // Randomly pick an image from the array
+        const randomImage = images[Math.floor(Math.random() * images.length)];
+        // Set the new background image
+        document.body.style.backgroundImage = `url('../images/${randomImage}')`;
+      }
+
+      // Change the background image every 10 seconds
+      setInterval(changeBackgroundImage, 5000); // 5000 ms = 5 seconds
+
+      // Initial background image change
+      changeBackgroundImage();
+    </script>
+  </body>
+</html>

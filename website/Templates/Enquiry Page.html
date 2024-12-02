@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdf6f1;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, p {
+            text-align: center;
+        }
+        form {
+         
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 0 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+        .form-row {
+            display: flex;
+            gap: 10px;
+        }
+        .form-row .col {
+            flex: 1;
+        }
+        button {
+            display: block;
+            margin: 0 auto; /* Center the button */
+            background:#333;
+            color: #fff;
+            padding: 15px 35px; /* Smaller size */
+            border: none;
+            border-radius: 4px;
+            font-size: 14px; /* Smaller font */
+            cursor: pointer;
+        }
+        button:hover {
+            background: #444;
+        }
+
+
+
+         /* Header Styles */
+         .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Space between logo and navigation */
+            padding: 10px 20px;
+            flex-direction: column;
+            color: black;
+          
+        }
+        
+        /* Logo Section */
+        .logo img {
+            max-width: 250px; /* Adjust logo size */
+            height: auto;
+            padding: 25px;
+           
+        }
+        
+        /* Navigation Section */
+        .nav {
+            display: flex;
+            gap: 220px; /* Space between navigation items */
+           
+        }
+        
+        .nav-item {
+            font-family: "Courier New";
+            text-decoration: none;
+            color:#3b444b;
+            font-size: 18px;
+            padding: 7px 12px;
+           
+
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        .nav-item:hover {
+           
+            color:#BCBCBC;
+            background-color: transparent;
+            cursor: pointer;
+        
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                flex-wrap: wrap; /* Wrap elements if needed on smaller screens */
+                justify-content: center;
+                text-align: center;
+            }
+            .nav {
+                flex-direction: column; /* Stack navigation items vertically */
+                gap: 10px;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="logo/logo.png" alt="Logo" />
+        </div>
+        <!-- Navigation Section -->
+        <nav class="nav">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#enquire" class="nav-item">Enquire</a>
+            <a href="#galleries" class="nav-item">Galleries</a>
+        </nav>
+    </header>
+    <div class="form-container">
+        <h1>Enquiry Form</h1>
+      
+        <form>
+            <div class="form-row">
+                <div class="col">
+                    <label for="first-name">First Name <span>(required)</span></label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="col">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name">
+                </div>
+            </div>
+            <label for="email">Email Address <span>(required)</span></label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="subject">Subject <span>(required)</span></label>
+            <input type="text" id="subject" name="subject" required>
+            
+            <label for="details">Event Dates / Details <span>(required)</span></label>
+            <textarea id="details" name="details" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <p>
+        Email: <a href="mailto:hi@namanverma.com" class="email-link">hi@namanverma.com</a>
+    </p>
+    <p class="description"style="text-align:center;white-space:pre-wrap;">
+      You can draft an email to us at the above-mentioned address, 
+      or you can send us the details by filling out the form below.
+  </p>
+  <p class="thank-you">Thank you!</p>
+</body>
+</html>

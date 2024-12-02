@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naman Verma - About</title>
+  <style>
+     * {
+            margin: 0;
+         padding: 0%;
+            box-sizing: border-box;
+            
+        }
+    
+        
+        /* Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #F4F0E6; /* Light background for contrast */
+            margin: 25px;
+            
+        }
+        
+        /* Header Styles */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Space between logo and navigation */
+            padding: 10px 20px;
+            flex-direction: column;
+            color: black;
+          
+        }
+        
+        /* Logo Section */
+        .logo img {
+            max-width: 250px; /* Adjust logo size */
+            height: auto;
+            padding: 25px;
+           
+        }
+        
+        /* Navigation Section */
+        .nav {
+            display: flex;
+            gap: 220px; /* Space between navigation items */
+           
+        }
+        
+        .nav-item {
+            font-family: "Courier New";
+            text-decoration: none;
+            color:#3b444b;
+            font-size: 18px;
+            padding: 7px 12px;
+           
+
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        .nav-item:hover {
+           
+            color:#BCBCBC;
+            background-color: transparent;
+            cursor: pointer;
+        
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                flex-wrap: wrap; /* Wrap elements if needed on smaller screens */
+                justify-content: center;
+                text-align: center;
+            }
+            .nav {
+                flex-direction: column; /* Stack navigation items vertically */
+                gap: 10px;
+                margin-top: 10px;
+            }
+        }
+        .container {
+      max-width: 1200px;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      margin-top: 40px;
+      align-items: center;
+    }
+    .text-section {
+      flex: 1;
+      padding-right: 20px;
+      margin-top: 60px;
+    }
+
+    .text-section h1 {
+      font-size: 34px;
+      font-weight: normal;
+      margin: 0;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    .text-section h2 {
+      font-size: 18px;
+      font-style: italic;
+      text-align: center;
+      margin: 10px 0 20px;
+    }
+    .text-section p {
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .text-section p:last-child {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .image-section {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .text-section {
+        padding-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="logo/logo.png" alt="Logo" />
+        </div>
+        <!-- Navigation Section -->
+        <nav class="nav">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#enquire" class="nav-item">Enquire</a>
+            <a href="#galleries" class="nav-item">Galleries</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="text-section">
+          <h1>NAMAN VERMA.</h1>
+          <h2>Moment. Memory. Miracle.</h2>
+          <p>
+            The journey is never about a shot but the unsaid stories within the shooting experience. 
+            The quest within is of something which is 'epiphanic'.
+          </p>
+          <p>
+            As an artist whose medium of bringing the art to the world is an intent of compartmentalising the moments, 
+            I am all about things which are not seen by the naked eye but a soul which feels what cannot be said 
+            through any other medium.
+          </p>
+          <p>
+            The world is material but I am still looking for a metaphor in it. 
+            Anything which can allow me the space to create what is not felt is the domain I am looking for.
+          </p>
+          <p>People. Photographs. Perfection.</p>
+        </div>
+        <div class="image-section">
+          <img src="path-to-your-image.jpg" alt="Naman Verma Portrait">
+        </div>
+      </div>
+  
+</body>
+</html>
